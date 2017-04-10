@@ -1,0 +1,32 @@
+CS6378 Project 2
+-----------------
+Author: Hsin-Hua Chen
+Topic: Lamport's Mutual Exclusion
+
+Files/Folders:
+1. src/: Source code folder
+         files: Project2.java, Node.java, ConfigReader.java, Message.java,
+				RV.java, LamportMutEx.java, RequestComparator.java
+2. bin/: Class folder
+3. launcher.sh: Launch "Project2" on remote device according to config file
+4. Cleanup.sh: kill all processes on remote device according to config file
+5. Compile.sh: run compile script
+6. test.py: check the correctness of protocol 
+
+Compiling instructions:
+1. Let configuration file, launcher script, cleanup script, 
+   src folder, bin folder in the same directory.
+2. Run command "javac -d bin src/*" or simply run compile.sh it will create
+   Byte code in bin folder.
+
+Running instruction:
+1. Run launcher.sh with configuration file as parameter:
+        sh launcher.sh [Configuration File Name]
+2. To End program, Run cleanup.sh with config file as parameter:
+        sh cleanup.sh [Configuation File Name]
+3. To verify the correctness of protocol, run command: python test.py
+
+Output:
+1. At the end of the program the program will generate output files named 
+   "config-<nodeid>.out" which shows the timestamp of critical session
+   entry and leave.

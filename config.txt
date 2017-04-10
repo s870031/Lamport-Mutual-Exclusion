@@ -1,0 +1,16 @@
+#
+# Configuration file for CS6378 Project #2
+# (Summer 2016)
+#
+# As per the "shell" convention, anything following a hash sign is
+# a comment and should be ignored by the parser.
+
+# NumberOfNodes meanOfd meanOfc NumberOfRequest
+5               20      10      200
+
+# nodeID hostname port
+0         dc02    5555
+1         dc03    5556
+2         dc04    5555
+3         dc05    5556
+4         dc08    5444
